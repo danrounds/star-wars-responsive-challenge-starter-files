@@ -52,27 +52,21 @@
 }
 
 /* Mobile-defaults */
+/*  -- single column */
 .col {
     width: 100%;
-    margin-bottom: 40px;
 }
 
 @media only screen and (min-width: 640px) {
-    /* three columns */
+    /* two columns */
     .col {
         width: 50%;
     }
 }
 
-@media only screen and (min-width: 902px) { /* stupidly arbitrary breakpoint */
+@media only screen and (min-width: 820px) {
+    /* three columns */
     .col {
         width: 33.33333333%;
     }
 }
-
-/* /\* This might be excessive and aesthetically unpleasing; was just a proof of concept, I suppose *\/ */
-/* @media only screen and (min-width: 1300px) { */
-/*     .col { */
-/*         width: 25%; */
-/*     } */
-/* } */

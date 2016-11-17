@@ -1,6 +1,6 @@
 body {
   /* font-family: 'Roboto', helvetica, sans-serif; */
-  font-family: "Roboto"";
+  /* font-family: "Roboto */
 }
 
 header {
@@ -28,7 +28,7 @@ main {
 /* } */
 
 .card {
-  border: 1px solid lightgray;
+  border: 1px solid #dfdfdf;
   margin-bottom: 20px;
 }
 
@@ -46,5 +46,3 @@ img {
   margin-top: 0;
   margin-bottom: 0;
 }
-
-.description: 
