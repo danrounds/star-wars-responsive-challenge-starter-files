@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+/************************************************************************************************************************************************************************************** 
+ * Grid, per this diagram: https://tf-curricula-prod.s3.amazonaws.com/curricula/5b3249003592fc371bac5c6254b50c9c/FEWD-001/v6/assets2/1.7.2_responsive_grids/grid_annotated_design.png   
+ *                                                                                                                                                                                      
+ *   * 960px of useable space; 20px of padding on the left and right (1000px width, total)                                                                                              
+ *                                                                                                                                                                                      
+ *   * 12 x 60px columns                                                                                                                                                                
+ *                                                                                                                                                                                      
+ *   * 12 x 20px gutters (11 full, two halves on the left and right margins)                                                                                                            
+ *
+ *  Implementation's a modified version of the one in Thinkful's curriculum
+/**************************************************************************************************************************************************************************************/
+
+
+.row {
+    /* We've literally just copied the dimensions from the spec, above */
+    max-width: 1000px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+}
+
+.row::before,
+.row::after {
+    display: table;
+    content '';
+}
+
+/* I wanted some flexible flow to my grid, and this prevented it. */
+.row::after {
+  clear: both;
+}
+
+.card, .headertext {
+    float: left;
+
+    /* Gutters:
+     * Each column is padded by half-a-gutter on each side,
+     *
+     * Half a gutter is 10px, 10/960 (context) = 1.041666%
+     *
+     */
+    padding-left: 1.04166666%;
+    padding-right: 1.04166666%;
+
+    margin-bottom: 20px;        /*because all the elements are flowing together, within our main div */
+}
+
+.headertext {
+    width: 100%
+}
+
+/* Mobile-defaults */
+.card {
+    width: 100%
+}
+
+@media only screen and (min-width: 640px) {
+    /* three columns */
+    .card {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .card {
+        width: 33.33333333%;
+    }
+}
+
+/* /\* This might be excessive and aesthetically unpleasing; was just a proof of concept, I suppose *\/ */
+/* @media only screen and (min-width: 1300px) { */
+/*     .card { */
+/*         width: 25%; */
+/*     } */
+/* } */
