@@ -45,8 +45,6 @@
      */
     padding-left: 1.04166666%;
     padding-right: 1.04166666%;
-
-    margin-bottom: 20px;        /*because all the elements are flowing together, within our main div */
 }
 
 .headertext {
@@ -55,7 +53,8 @@
 
 /* Mobile-defaults */
 .card {
-    width: 100%
+    width: 100%;
+    margin-bottom: 40px;
 }
 
 @media only screen and (min-width: 640px) {
@@ -65,7 +64,7 @@
     }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 902px) {
     .card {
         width: 33.33333333%;
     }

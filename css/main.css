@@ -27,34 +27,24 @@ main {
 /*   margin-bottom: 600px; */
 /* } */
 
-/* .box { */
-/*   height: 450px; */
-/*   border: 1px solid lightgray; */
-/*   margin-bottom: 20px; */
-/* } */
-
-
 .card {
-  height: 450px;
   border: 1px solid lightgray;
-  margin-bottom: 50px;
-
+  margin-bottom: 20px;
 }
 
 img {
   width: 100%;
-  /* max-height: 300px; */
 }
 
 .content {
-  margin: 20px;
+  padding: 20px;
 }
-
-/* .name, .description { */
-/*   margin-left: 20px; */
-/* } */
 
 .name {
   font-size: 18px;
   font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
 }
+
+.description: 
