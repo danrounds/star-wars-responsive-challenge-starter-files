@@ -23,6 +23,8 @@
     margin: 0 auto;
 }
 
+/* "Clearfix" -- i.e. our rows are forced to scale to the height of
+   their tallest children elements. */
 .row::before,
 .row::after {
     display: table;
@@ -32,8 +34,10 @@
 .row::after {
   clear: both;
 }
+/* End clearfix */
 
-.container {
+
+.container, .head {
     float: left;
 
     /* Gutters:
@@ -46,9 +50,12 @@
     padding-right: 1.04166666%;
 }
 
+
+/* Breakpoints */
+
 /* Mobile-defaults */
 /*  -- single column */
-.container {
+.container, .head {
     width: 100%;
 }
 
