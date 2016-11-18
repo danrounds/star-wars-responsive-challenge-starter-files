@@ -1,11 +1,10 @@
 body {
-  /* font-family: 'Roboto', helvetica, sans-serif; */
   fony-family: 'Roboto';
 }
 
 header {
   background-color: #eebb44;
-  height: 100px;
+  /* height: 100px; */
   margin-bottom: 40px;
 }
 

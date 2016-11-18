@@ -29,12 +29,11 @@
     content '';
 }
 
-/* I wanted some flexible flow to my grid, and this prevented it. */
 .row::after {
   clear: both;
 }
 
-.container, .headertext {
+.container {
     float: left;
 
     /* Gutters:
@@ -45,10 +44,6 @@
      */
     padding-left: 1.04166666%;
     padding-right: 1.04166666%;
-}
-
-.headertext {
-    width: 100%;
 }
 
 /* Mobile-defaults */
