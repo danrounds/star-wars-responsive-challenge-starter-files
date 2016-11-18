@@ -6,12 +6,10 @@
  * Grid, per this diagram: https://tf-curricula-prod.s3.amazonaws.com/curricula/5b3249003592fc371bac5c6254b50c9c/FEWD-001/v6/assets2/1.7.2_responsive_grids/grid_annotated_design.png   
  *                                                                                                                                                                                      
  *   * 960px of useable space; 20px of padding on the left and right (1000px width, total)                                                                                              
- *                                                                                                                                                                                      
  *   * 12 x 60px columns                                                                                                                                                                
- *                                                                                                                                                                                      
  *   * 12 x 20px gutters (11 full, two halves on the left and right margins)                                                                                                            
  *
- *  Implementation's a modified version of the one in Thinkful's curriculum
+ *  Implementation's basically just Thinkful's (Frontend curriculum, 1.6)
 /**************************************************************************************************************************************************************************************/
 
 
@@ -20,7 +18,7 @@
     max-width: 1000px;
     padding-left: 20px;
     padding-right: 20px;
-    margin: 0 auto;
+    margin: 0 auto;   /* centers our row*/
 }
 
 /* "Clearfix" -- i.e. our rows are forced to scale to the height of
@@ -32,10 +30,9 @@
 }
 
 .row::after {
-  clear: both;
+    clear: both;
 }
 /* End clearfix */
-
 
 .container, .head {
     float: left;
@@ -51,14 +48,14 @@
 }
 
 
-/* Breakpoints */
+/* B R E A K P O I N T S */
 
-/* Mobile-defaults */
-/*  -- single column */
+/* Mobile-defaults -- single column */
 .container, .head {
     width: 100%;
 }
 
+/* Tablet-ish */
 @media only screen and (min-width: 640px) {
     /* two columns */
     .container {
@@ -66,6 +63,7 @@
     }
 }
 
+/* Desktop */
 @media only screen and (min-width: 820px) {
     /* three columns */
     .container {
